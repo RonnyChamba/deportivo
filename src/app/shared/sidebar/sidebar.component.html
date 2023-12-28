@@ -1,0 +1,92 @@
+<!-- <nz-layout>
+
+
+  <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+
+    <div class="logo"></div>
+
+    <ul nz-menu nzTheme="dark" nzMode="inline"  *ngFor="let data of model" >
+     
+      <li nz-menu-item>
+        <span {{data.icon}}></span>
+       
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>File</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>File</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>File</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>File</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>File</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>File</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>File</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>File</span>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <span class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+        (click)="isCollapsed = !isCollapsed"></span>
+    </nz-header>
+    <nz-content>
+      <nz-breadcrumb>
+
+        <app-botonera></app-botonera>
+
+      </nz-breadcrumb>
+      <app-grid-card></app-grid-card>
+    </nz-content>
+    <app-footer></app-footer>
+  </nz-layout>
+</nz-layout> -->
+
+<nz-layout>
+  <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+    <div class="logo"> 
+      <!-- <img src="" alt=""> -->
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" class="menu">
+      <li nz-menu-item *ngFor="let data of model">
+        <span ><img src="{{data.icon }}" alt=""></span>
+        <span class="datos">{{ data.label }}</span>
+      </li>
+    </ul>
+  </nz-sider>
+
+  <nz-layout>
+
+    <app-navbar (newItemEvent)="onClickMenu($event)"></app-navbar>
+
+    <nz-content>
+      <nz-breadcrumb>
+        <app-botonera></app-botonera>
+      </nz-breadcrumb>
+      
+      <app-grid-card></app-grid-card>
+    </nz-content>
+
+    <app-footer></app-footer>
+  </nz-layout>
+</nz-layout>

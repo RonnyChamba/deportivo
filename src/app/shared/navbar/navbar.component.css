@@ -1,0 +1,23 @@
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+nz-header {
+  background: #fff;
+  padding: 0;
+  
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  font-size: 0.9rem;
+ height: 50px;
+ width: 100%;; 
+  background-color: aquamarine;
+}

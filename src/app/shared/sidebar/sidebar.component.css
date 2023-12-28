@@ -1,0 +1,38 @@
+ 
+ .trigger:hover {
+   color: #1890ff;
+ }
+
+ .logo {
+   height: 32px;
+   background: rgba(255, 255, 255, 0.2);
+   margin: 16px;
+
+ }
+
+ .menu {
+   /* margin-bottom: 200px; */ 
+
+   height: 100%;
+   
+ }
+
+ .datos {
+
+   margin-left: 15px;
+
+
+
+ }
+ 
+ 
+
+ nz-content {
+   margin: 0 10px;
+   border: yellow 1px solid;
+ }
+
+ nz-breadcrumb {
+   margin: 10px 0;
+   border: rgb(8, 0, 255) 1px solid;
+ }
